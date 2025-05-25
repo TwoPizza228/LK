@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>🎨 Цвет против слова</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🎨 Цвет против слова</h1>
+
+    <div id="word">слово</div>
+
+    <div class="buttons">
+      <button onclick="checkAnswer(true)" class="btn yes">ДА</button>
+      <button onclick="checkAnswer(false)" class="btn no">НЕТ</button>
+    </div>
+
+    <div class="info">
+      ⏱️ Раунд: <span id="time">10</span> сек |
+      🕒 Игра: <span id="game-time">60</span> сек |
+      🎯 Счёт: <span id="score">0</span>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
