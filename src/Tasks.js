@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css"; // импорт CSS
+import "./style.css" // импорт CSS
 
 export default function Tasks() {
   const [goals, setGoals] = useState([]);
@@ -15,7 +15,7 @@ export default function Tasks() {
     if (!trimmed) return;
     const newGoals = [...goals, { text: trimmed, done: false }];
     setGoals(newGoals);
-    localStorage.setItem("tasksGoals", JSON.stringify(newGoals)); // сохраняем
+    localStorage.setItem("tasksGoals", JSON.stringify(newGoals)); 
     setInputValue("");
   }
 
