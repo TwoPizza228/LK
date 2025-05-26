@@ -4,7 +4,6 @@ export default function Profile() {
   const [name, setName] = useState("");
   const [inputValue, setInputValue] = useState("");
 
-  // При загрузке читаем из localStorage
   useEffect(() => {
     const savedName = localStorage.getItem("studentName");
     if (savedName) setName(savedName);
@@ -14,7 +13,7 @@ export default function Profile() {
     const trimmed = inputValue.trim();
     if (trimmed) {
       setName(trimmed);
-      localStorage.setItem("studentName", trimmed); // сохраняем
+      localStorage.setItem("studentName", trimmed); 
       setInputValue("");
     } else {
       alert("Введите ФИО!");
