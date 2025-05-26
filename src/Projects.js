@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"; // добавляем useEffect
+import React, { useState, useRef, useEffect } from "react"; 
 import "./style.css"; 
 
 export default function Projects() {
@@ -8,8 +8,6 @@ export default function Projects() {
   const nameRef = useRef();
   const descRef = useRef();
   const fileRef = useRef();
-
-  // Загрузка проектов из localStorage при монтировании компонента
   useEffect(() => {
     const savedProjects = localStorage.getItem("projectsList");
     if (savedProjects) {
